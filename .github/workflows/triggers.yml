@@ -1,0 +1,16 @@
+name: Trigger CI
+on:
+  push: main
+  workflow_dispatch:
+    inputs:
+      reason:
+      description: "give it a reason"
+      required: true
+      default: "this is default reason but you need to fill it"
+jobs:
+  run-trigger:
+    runs-on: ubuntu-latest
+    steps:      
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - run: echo "Triggered by ${{ github.event_name }}"
