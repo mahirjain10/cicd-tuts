@@ -1,0 +1,13 @@
+name: CI Checkpoint1
+
+on:
+  push: main
+  pull: main
+jobs :
+  run-checkpoint :
+    run-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v7
+      - run: echo "$GITHUB_REF"
+      - run: echo "checkpoint 1 done"
