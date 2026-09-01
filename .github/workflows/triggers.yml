@@ -5,9 +5,9 @@ on:
   workflow_dispatch:
     inputs:
       reason:
-      description: "give it a reason"
+      description: 'give it a reason'
       required: true
-      default: "this is default reason but you need to fill it"
+      default: 'this is default reason but you need to fill it'
 jobs:
   run-trigger:
     runs-on: ubuntu-latest
