@@ -1,6 +1,7 @@
 name: Trigger CI
 on:
-  push: main
+  push:
+    branches: main
   workflow_dispatch:
     inputs:
       reason:
