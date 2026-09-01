@@ -1,11 +1,13 @@
 name: CI Checkpoint1
 
 on:
-  push: main
-  pull: main
+  push: 
+    branches: [main]
+  pull: 
+    branches: [main]
 jobs :
   run-checkpoint :
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Check out repository
         uses: actions/checkout@v7
