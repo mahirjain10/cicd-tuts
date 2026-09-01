@@ -9,4 +9,4 @@ jobs:
     steps:
        - name: Check out repository
          uses: actions/checkout@v7
-         run: echo "Triggered by ${{ github.event_name }}"
+       - run: echo "Triggered by ${{ github.event_name }}"
